@@ -25,7 +25,7 @@ class Post(models.Model):
     status = models.CharField(max_length=10, choices=options, default='draft')
     objects = models.Manager()
     newmanager = NewManager()
-    image = models.ImageField()
+    # image = models.ImageField()
     
     
     def get_absolute_url(self):
